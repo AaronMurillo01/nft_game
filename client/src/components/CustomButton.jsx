@@ -1,17 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../styles'
+import styles from '../styles';
 
-const CustomButton = ({title, handleClick, restStyles}) => {
-  return (
-    <button
+const CustomButton = ({ title, handleClick, restStyles }) => (
+  <button
     type="button"
     className={`${styles.btn} ${restStyles}`}
     onClick={handleClick}
-    >
-    {title}    
-    </button>
-  )
-}
+  >
+    {title}
+  </button>
+);
 
-export default CustomButton
+export default CustomButton;
